@@ -65,4 +65,4 @@ elif imt >=17:
 else:
     print("Kategori", nama, "         = Sangat Kurus")
     
-print("\nProgram Selesai ....")
+print("\nProgram telah Selesai! ....")
