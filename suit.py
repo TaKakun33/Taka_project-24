@@ -22,7 +22,11 @@ while True:
     if manusia in ['g','b','k']:
         break
     else:
-        print('\nInput salah!')
+        os.system('cls')
+        print("\n                     Suit                      ")
+        print("                  by: Taka.py                  ")
+        print("===============================================")
+        print('Input salah!')
 
 if komputer == 1 and manusia == 'b' or  komputer == 2 and manusia == 'k' or komputer == 3 and manusia == 'g':
     print(f'\nKomputer: {trans[komputer]}')
