@@ -6,7 +6,7 @@ print("\n                     Suit                      ")
 print("                  by: Taka.py                  ")
 print("===============================================")
 
-trans = {
+translate = {
     1 : 'Gunting',
     2 : 'Batu',
     3 : 'Kertas',
@@ -29,18 +29,18 @@ while True:
         print('Input salah!')
 
 if komputer == 1 and manusia == 'b' or  komputer == 2 and manusia == 'k' or komputer == 3 and manusia == 'g':
-    print(f'\nKomputer: {trans[komputer]}')
-    print(f'Kamu: {trans[manusia]}')
+    print(f'\nKomputer: {translate[komputer]}')
+    print(f'Kamu: {translate[manusia]}')
     print('kamu menang!')
     
 elif komputer == 1 and manusia == 'k' or  komputer == 2 and manusia == 'g' or komputer == 3 and manusia == 'b':
-    print(f'\nKomputer: {trans[komputer]}')
-    print(f'Kamu: {trans[manusia]}')
+    print(f'\nKomputer: {translate[komputer]}')
+    print(f'Kamu: {translate[manusia]}')
     print('kamu kalah!')
    
 else:
-    print(f'\nKomputer: {trans[komputer]}')
-    print(f'Kamu: {trans[manusia]}')
+    print(f'\nKomputer: {translate[komputer]}')
+    print(f'Kamu: {translate[manusia]}')
     print('Seri!')
     
 print('\nprogram selesai...')
