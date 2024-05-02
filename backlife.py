@@ -1,47 +1,48 @@
 def sehat(nama,umur,kelamin,tinggi,berat):
-    if float(umur) > 60 :
+    print()
+    if umur > 60 :
         if kelamin == 'l':
-            print("Kalori per hari",nama,"  =", (13.5*float(berat))+487, "Kkal")
+            print("Kalori per hari",nama,"  =", (13.5*berat)+487, "Kkal")
         elif kelamin == 'p':
-            print("Kalori per hari",nama,"  =", (10.5*float(berat))+596, "Kkal")
+            print("Kalori per hari",nama,"  =", (10.5*berat)+596, "Kkal")
 
-    elif float(umur) > 30 :
+    elif umur > 30 :
         if kelamin == 'l':
-            print("Kalori per hari",nama,"  =", (11.6*float(berat))+879, "Kkal")
+            print("Kalori per hari",nama,"  =", (11.6*berat)+879, "Kkal")
         elif kelamin == 'p':
-            print("Kalori per hari",nama,"  =", (8.7*float(berat))+829, "Kkal")
+            print("Kalori per hari",nama,"  =", (8.7*berat)+829, "Kkal")
 
-    elif float(umur) > 18 :
+    elif umur > 18 :
         if kelamin == 'l':
-            print("Kalori per hari",nama,"  =", (15.3*float(berat))+679, "Kkal")
+            print("Kalori per hari",nama,"  =", (15.3*berat)+679, "Kkal")
         elif kelamin == 'p':
-            print("Kalori per hari",nama,"  =", (14.7*float(berat))+496, "Kkal")
+            print("Kalori per hari",nama,"  =", (14.7*berat)+496, "Kkal")
 
-    elif float(umur) > 10 :
+    elif umur > 10 :
         if kelamin == 'l':
-            print("Kalori per hari",nama,"  =", (17.5*float(berat))+651, "Kkal")
+            print("Kalori per hari",nama,"  =", (17.5*berat)+651, "Kkal")
         elif kelamin == 'p':
-            print("Kalori per hari",nama,"  =", (12.2*float(berat))+746, "Kkal")
+            print("Kalori per hari",nama,"  =", (12.2*berat)+746, "Kkal")
 
-    elif float(umur) > 3 :
+    elif umur > 3 :
         if kelamin == 'l':
-            print("Kalori per hari",nama,"  =", (22.7*float(berat))+495, "Kkal")
+            print("Kalori per hari",nama,"  =", (22.7*berat)+495, "Kkal")
         elif kelamin == 'p':
-            print("Kalori per hari",nama,"  =", (22.5*float(berat))+499, "Kkal")
+            print("Kalori per hari",nama,"  =", (22.5*berat)+499, "Kkal")
 
     else:
         if kelamin == 'l':
-            print("Kalori per hari",nama,"  =", (60.9*float(berat))-54, "Kkal")
+            print("Kalori per hari",nama,"  =", (60.9*berat)-54, "Kkal")
         elif kelamin == 'p':
-            print("Kalori per hari",nama,"  =", (61*float(berat))-51, "Kkal")
+            print("Kalori per hari",nama,"  =", (61*berat)-51, "Kkal")
 
 
     if kelamin == 'l':
-        print("Berat Ideal", nama, "      =", (float(tinggi) - 100)-((float(tinggi) - 100) * 0.1 ), "Kg")
+        print("Berat Ideal", nama, "      =", (tinggi - 100)-((tinggi - 100) * 0.1 ), "Kg")
     if kelamin == 'p':
-        print("Berat Ideal", nama, "      =", (float(tinggi) - 100)-((float(tinggi) - 100) * 0.15 ), "Kg")
+        print("Berat Ideal", nama, "      =", (tinggi - 100)-((tinggi - 100) * 0.15 ), "Kg")
 
-    imt = float(berat )/ (float(tinggi) **2)
+    imt = berat / ((tinggi/100)**2)
     print("Indeks Masa Tubuh", nama, "=", imt)
 
     if imt >=27.1:
