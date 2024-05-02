@@ -1,11 +1,7 @@
 import random 
-import os
+from head import head
 
-os.system('cls')
-print("\n                     Suit                      ")
-print("                  by: Taka.py                  ")
-print("===============================================")
-
+head('Suit.Game')
 translate = {
     1 : 'Gunting',
     2 : 'Batu',
@@ -22,10 +18,7 @@ while True:
     if manusia in ['g','b','k']:
         break
     else:
-        os.system('cls')
-        print("\n                     Suit                      ")
-        print("                  by: Taka.py                  ")
-        print("===============================================")
+        head('Suit.Game')
         print('Input salah!')
 
 if komputer == 1 and manusia == 'b' or  komputer == 2 and manusia == 'k' or komputer == 3 and manusia == 'g':
