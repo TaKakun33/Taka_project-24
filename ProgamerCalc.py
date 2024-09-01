@@ -1,7 +1,7 @@
 # desimal ke biner
-
 user = float(input('masukan angka :'))
 bit = ''
+
 while(user):
     if user != 1:
         bit = bit + str(int(user % 2))
